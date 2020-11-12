@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "checkJs": true,
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "experimentalDecorators": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
