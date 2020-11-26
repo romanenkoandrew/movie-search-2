@@ -1,11 +1,12 @@
 import { css } from '@emotion/core';
 import { COLORS } from 'constants/colors';
+import { BREAKPOINTS } from 'constants/breakpoints';
 
 export default {
   layoutContainer: () => css`
     min-height: 100vh;
   `,
-  header: () => css`
+  header: (val) => css`
     h1 {
       color: ${COLORS.SECONDARY_TEXT_COLOR};
       margin-bottom: 0;
@@ -13,6 +14,15 @@ export default {
       height: 100%;
       display: flex;
       justify-content: center;
+      @media (max-width: ${BREAKPOINTS.sm}) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: ${BREAKPOINTS.xs}) {
+        display: ${val ? 'flex' : 'none'};
+      }
+    }
+    @media (max-width: ${BREAKPOINTS.md}) {
+      padding: 0;
     }
   `,
   content: () => css`
@@ -34,8 +44,13 @@ export default {
         color: #fff;
       }
     }
-  `,
-  textSecondary: () => css`
-    color: ${COLORS.SECONDARY_TEXT_COLOR};
+    @media (max-width: ${BREAKPOINTS.sm}) {
+      justify-content: center;
+      a {
+        &:first-of-type {
+          display: none;
+        }
+      }
+    }
   `,
 };

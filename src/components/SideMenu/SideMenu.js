@@ -21,17 +21,17 @@ import {
 
 const { Sider } = Layout;
 
-const SideMenu = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+const SideMenu = (props) => {
+  const { toggleSideMenu, sideMenuIsOpen } = props;
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    toggleSideMenu({ sideMenuIsOpen: !sideMenuIsOpen });
   };
   return (
     <Sider
       css={styles.sider}
       theme='dark'
       collapsible
-      collapsed={isMenuOpen}
+      collapsed={sideMenuIsOpen}
       onCollapse={toggleMenu}
     >
       <Menu mode='inline' theme='dark' css={styles.menu}>
@@ -39,7 +39,7 @@ const SideMenu = () => {
           <Link to={MAIN_ROUTE}>Main</Link>
         </Menu.Item>
         <Menu.Item key={WATCHLIST_ROUTE} icon={<ProfileOutlined />}>
-          <Link to={WATCHLIST_ROUTE}>WatchList</Link>
+          <Link to={WATCHLIST_ROUTE}>Watch List</Link>
         </Menu.Item>
         <Menu.Item key={VIEWED_ROUTE} icon={<PlaySquareOutlined />}>
           <Link to={VIEWED_ROUTE}>Viewed</Link>
@@ -55,6 +55,9 @@ const SideMenu = () => {
   );
 };
 
-SideMenu.propTypes = {};
+SideMenu.propTypes = {
+  sideMenuIsOpen: PropTypes.bool.isRequired,
+  toggleSideMenu: PropTypes.func.isRequired,
+};
 
 export default SideMenu;
