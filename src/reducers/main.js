@@ -14,6 +14,7 @@ export default function (state = initialState, { type, payload }) {
     }
     case ActionTypes.GET_ALL_TITLES_SUCCESS: {
       const movieTitles = get(payload, 'Search');
+      movieTitles.forEach((el) => (el.key = el.imdbID));
       return { ...state, movieTitles };
     }
 

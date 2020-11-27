@@ -3,10 +3,10 @@ import ActionTypes from 'actionTypes';
 import { getAllTitlesRequest } from 'actions';
 
 export function* getAllTitlesWorker({ payload }) {
-  const { search, type, page } = payload;
+  const { search, type } = payload;
   yield console.log(payload);
   try {
-    yield put(getAllTitlesRequest(search, type, page));
+    yield put(getAllTitlesRequest(search, type ));
     // yield put(getAllTitlesRequest(title, type, page));
     // const { failure } = yield race({
     //   failure: take(ActionTypes.GET_ALL_TITLES_FAILURE),

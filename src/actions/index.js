@@ -3,9 +3,9 @@ import { getEndpoint } from 'helpers/requests';
 import { createAction as createAPIActions } from 'redux-api-middleware';
 import ActionTypes from 'actionTypes';
 
-export const getAllTitlesRequest = (title, type = '', page = 1) =>
+export const getAllTitlesRequest = (title, type = '') =>
   createAPIActions({
-    endpoint: getEndpoint(`&s=${title}&type=${type}&page=${page}`),
+    endpoint: getEndpoint(`&s=${title}&type=${type}`),
     method: 'GET',
     types: [
       ActionTypes.GET_ALL_TITLES_REQUEST,

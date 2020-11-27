@@ -7,3 +7,7 @@ export const sideMenuIsOpenSelector = createSelector(
   mainSelector,
   (main) => main.sideMenuIsOpen
 );
+export const movieTitlesSelector = createSelector(
+  mainSelector,
+  (main) => main.movieTitles
+);

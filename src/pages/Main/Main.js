@@ -3,7 +3,8 @@ import SideMenu from 'components/SideMenu';
 import { Layout } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import { Typography } from 'antd';
-import MainContent from 'components/WatchList';
+import MainContent from 'components/MainContent';
+import TableContainer from 'components/TableContainer';
 import styles from './Main.styles';
 
 const { Text, Link, Title } = Typography;
@@ -21,6 +22,7 @@ const Main = (props) => {
         </Header>
         <Content css={styles.content}>
           <MainContent />
+          <TableContainer />
         </Content>
         <Footer css={styles.footer}>
           <Link href='mailto:ramanenkaandrew@gmail.com'>
