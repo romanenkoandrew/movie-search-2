@@ -4,10 +4,15 @@ import PropTypes from 'prop-types';
 import { Menu, Layout } from 'antd';
 import {
   HomeOutlined,
+  HomeFilled,
   ProfileOutlined,
+  ProfileFilled,
   StarOutlined,
-  RestOutlined,
+  StarFilled,
   PlaySquareOutlined,
+  PlaySquareFilled,
+  RestOutlined,
+  RestFilled,
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import styles from './SideMenu.styles';
@@ -35,19 +40,34 @@ const SideMenu = (props) => {
       onCollapse={toggleMenu}
     >
       <Menu mode='inline' theme='dark' css={styles.menu}>
-        <Menu.Item key={MAIN_ROUTE} icon={<HomeOutlined />}>
+        <Menu.Item
+          key={MAIN_ROUTE}
+          icon={<HomeFilled style={{ color: 'green' }} />}
+        >
           <Link to={MAIN_ROUTE}>Main</Link>
         </Menu.Item>
-        <Menu.Item key={WATCHLIST_ROUTE} icon={<ProfileOutlined />}>
+        <Menu.Item
+          key={WATCHLIST_ROUTE}
+          icon={<ProfileFilled style={{ color: '#ff9900' }} />}
+        >
           <Link to={WATCHLIST_ROUTE}>Watch List</Link>
         </Menu.Item>
-        <Menu.Item key={VIEWED_ROUTE} icon={<PlaySquareOutlined />}>
+        <Menu.Item
+          key={VIEWED_ROUTE}
+          icon={<PlaySquareFilled style={{ color: 'red' }} />}
+        >
           <Link to={VIEWED_ROUTE}>Viewed</Link>
         </Menu.Item>
-        <Menu.Item key={FAVORITE_ROUTE} icon={<StarOutlined />}>
+        <Menu.Item
+          key={FAVORITE_ROUTE}
+          icon={<StarFilled style={{ color: 'yellow' }} />}
+        >
           <Link to={FAVORITE_ROUTE}>Favorite</Link>
         </Menu.Item>
-        <Menu.Item key={BLACK_LIST_ROUTE} icon={<RestOutlined />}>
+        <Menu.Item
+          key={BLACK_LIST_ROUTE}
+          icon={<RestFilled style={{ color: 'white' }} />}
+        >
           <Link to={BLACK_LIST_ROUTE}>Black List</Link>
         </Menu.Item>
       </Menu>
