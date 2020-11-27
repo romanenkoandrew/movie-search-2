@@ -14,5 +14,8 @@ export const getAllTitlesRequest = (title, type = '') =>
     ],
   });
 
+export const showAlert = createAction(ActionTypes.SHOW_ALERT);
+export const hideAlert = createAction(ActionTypes.HIDE_ALERT);
+
 export const getAllTitles = createAction(ActionTypes.GET_ALL_TITLES);
 export const toggleSideMenu = createAction(ActionTypes.TOGGLE_SIDE_MENU);

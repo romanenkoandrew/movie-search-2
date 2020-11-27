@@ -1,8 +1,8 @@
 import Main from './Main';
-import {} from 'actions';
+import {hideAlert} from 'actions';
 import { connect } from 'react-redux';
 import selector from './selector';
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = {hideAlert};
 
 export default connect(selector, mapDispatchToProps)(Main);

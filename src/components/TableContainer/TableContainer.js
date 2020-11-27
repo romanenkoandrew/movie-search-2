@@ -61,7 +61,7 @@ const columns = [
   },
 ];
 const TableContainer = (props) => {
-  const { movieTitles } = props;
+  const { movieTitles, isLoading } = props;
   return (
     <Table
       css={styles.table}
@@ -69,11 +69,13 @@ const TableContainer = (props) => {
       columns={columns}
       dataSource={movieTitles}
       scroll={{ x: true }}
+      loading={isLoading}
     />
   );
 };
 export default TableContainer;
 
 TableContainer.propTypes = {
-  movieTitles: PropTypes.array,
+  movieTitles: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired,
 };
