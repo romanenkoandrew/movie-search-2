@@ -3,14 +3,16 @@ import get from 'lodash/get';
 
 export const initialState = {
   movieTitles: [],
-  watchList: [],
-  viewed: [],
-  favorite: [],
+  watchList: [{ Title: 'watchList', Year: 'watchList', key: 'watchList' }],
+  viewed: [{ Title: 'viewed', Year: 'viewed', key: 'viewed' }],
+  favorite: [{ Title: 'favorite', Year: 'favorite', key: 'favorite' }],
   blackList: [],
   sideMenuIsOpen: false,
   alert: null,
   isError: null,
   isLoading: false,
+  totalResults: 0,
+  currentPage: 1,
 };
 
 export default function (state = initialState, { type, payload }) {
@@ -30,6 +32,20 @@ export default function (state = initialState, { type, payload }) {
       return { ...state, sideMenuIsOpen };
     }
 
+    case ActionTypes.CURRENT_PAGE_INCREMENT: {
+      let currentPage = get(payload, 'currentPage');
+      currentPage += 1;
+      return { ...state, currentPage };
+    }
+    case ActionTypes.CURRENT_PAGE_DECREMENT: {
+      let currentPage = get(payload, 'currentPage');
+      currentPage -= 1;
+      return { ...state, currentPage };
+    }
+    case ActionTypes.CURRENT_PAGE_RESET: {
+      return { ...state, currentPage: 1 };
+    }
+
     case ActionTypes.GET_ALL_TITLES_REQUEST: {
       return { ...state, isLoading: true };
     }
@@ -38,8 +54,9 @@ export default function (state = initialState, { type, payload }) {
     }
     case ActionTypes.GET_ALL_TITLES_SUCCESS: {
       const movieTitles = get(payload, 'Search');
+      const totalResults = get(payload, 'totalResults');
       movieTitles.forEach((el) => (el.key = el.imdbID));
-      return { ...state, movieTitles, isLoading: false };
+      return { ...state, movieTitles, totalResults, isLoading: false };
     }
 
     default: {

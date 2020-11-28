@@ -1,7 +1,6 @@
 import React from 'react';
 import SideMenu from 'components/SideMenu';
 import MainContent from 'components/MainContent';
-import TableContainer from 'components/TableContainer';
 import AlertMessage from 'components/Alert/Alert';
 import PropTypes from 'prop-types';
 import { Typography, Layout } from 'antd';
@@ -30,7 +29,6 @@ const Main = (props) => {
         </Header>
         <Content css={styles.content}>
           <MainContent />
-          <TableContainer />
         </Content>
         <Footer css={styles.footer}>
           <Link href='mailto:ramanenkaandrew@gmail.com'>

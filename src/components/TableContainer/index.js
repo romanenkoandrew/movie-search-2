@@ -1,8 +1,16 @@
 import TableContainer from './TableContainer';
-import {} from 'actions';
+import {
+  getAllTitles,
+  currentPageIncrement,
+  currentPageDecrement,
+} from 'actions';
 import { connect } from 'react-redux';
 import selector from './selector';
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = {
+  getAllTitles,
+  currentPageIncrement,
+  currentPageDecrement,
+};
 
 export default connect(selector, mapDispatchToProps)(TableContainer);

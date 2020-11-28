@@ -2,14 +2,14 @@ import { takeEvery, all, put, race, take, select } from 'redux-saga/effects';
 import ActionTypes from 'actionTypes';
 import { getAllTitlesRequest, showAlert } from 'actions';
 import { errorMessage } from 'helpers/errorMessage';
+import { currentPageSelector } from 'selectors';
 
 export function* getAllTitlesWorker({ payload }) {
   const { search, type } = payload;
   yield console.log(payload);
   try {
-    yield put(getAllTitlesRequest(search, type));
-
-    // yield put(getAllTitlesRequest(title, type, page));
+    const page = yield select(currentPageSelector);
+    yield put(getAllTitlesRequest(search, type, page));
     const { failure, success } = yield race({
       failure: take(ActionTypes.GET_ALL_TITLES_FAILURE),
       success: take(ActionTypes.GET_ALL_TITLES_SUCCESS),
