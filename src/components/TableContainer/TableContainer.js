@@ -17,6 +17,8 @@ import styles from './TableContainer.styles';
 
 const { Title } = Typography;
 
+const noImage = 'assets/img/noImage.jpg';
+
 const columns = [
   {
     title: 'Poster',
@@ -24,6 +26,7 @@ const columns = [
     key: 'Poster',
     width: 100,
     render: (dataIndex) => {
+      if (dataIndex === 'N/A') return <div css={styles.poster(noImage)}></div>;
       return <div css={styles.poster(dataIndex)}></div>;
     },
   },
@@ -154,6 +157,26 @@ const TableContainer = (props) => {
     } else
       return (
         <>
+          <Row justify='end' css={styles.marginBottom}>
+            <Button
+              css={styles.button}
+              onClick={previousPage}
+              disabled={currentPage === 1 || isLoading}
+            >
+              &lt; Previous
+            </Button>
+            <Button
+              css={styles.button}
+              onClick={nextPage}
+              disabled={
+                !search ||
+                currentPage > totalResults / numberValuesOnPage ||
+                isLoading
+              }
+            >
+              Next &gt;
+            </Button>
+          </Row>
           <Table
             css={styles.table}
             bordered
@@ -169,24 +192,6 @@ const TableContainer = (props) => {
               };
             }}
           />
-          <Row justify='end'>
-            <Button
-              css={styles.button}
-              onClick={previousPage}
-              disabled={currentPage === 1}
-            >
-              &lt; Previous
-            </Button>
-            <Button
-              css={styles.button}
-              onClick={nextPage}
-              disabled={
-                !search || currentPage > totalResults / numberValuesOnPage
-              }
-            >
-              Next &gt;
-            </Button>
-          </Row>
         </>
       );
   };
