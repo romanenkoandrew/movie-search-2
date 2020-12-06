@@ -1,13 +1,17 @@
 import { css } from '@emotion/core';
 
 export default {
-  alert: () => css`
-    position: absolute;
-    width: 300px;
-    left: 50%;
-    top: 7%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 1001;
+  poster: (image) => css`
+    height: 27rem;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(${image});
+  `,
+  sizeH1: () => css`
+    font-size: 1.5rem;
+  `,
+  divider: () => css`
+    margin: 0;
   `,
 };

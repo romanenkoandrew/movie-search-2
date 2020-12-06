@@ -11,3 +11,7 @@ export const isLoadingSelector = createSelector(
   modalWindow,
   (modalWindow) => modalWindow.isLoading
 );
+export const aboutMovieSelector = createSelector(
+  modalWindow,
+  (modalWindow) => modalWindow.aboutMovie
+);

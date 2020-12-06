@@ -82,6 +82,7 @@ const TableContainer = (props) => {
     currentPage,
     totalResults,
     toggleModal,
+    aboutMovie,
     isOpenModal,
   } = props;
   const { pathname } = useLocation();
@@ -211,7 +212,11 @@ const TableContainer = (props) => {
         {titleTable()}
       </Title>
       {diffTable()}
-      <AboutMovie toggleModal={toggleModal} isOpenModal={isOpenModal} />
+      <AboutMovie
+        toggleModal={toggleModal}
+        isOpenModal={isOpenModal}
+        aboutMovie={aboutMovie}
+      />
     </>
   );
 };
@@ -232,5 +237,6 @@ TableContainer.propTypes = {
   currentPage: PropTypes.number.isRequired,
   totalResults: PropTypes.string.isRequired,
   isOpenModal: PropTypes.bool.isRequired,
+  aboutMovie: PropTypes.object.isRequired,
   toggleModal: PropTypes.func.isRequired,
 };

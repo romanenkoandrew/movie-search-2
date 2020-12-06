@@ -4,7 +4,7 @@ import get from 'lodash/get';
 export const initialState = {
   isLoading: false,
   isOpenModal: false,
-  aboutMovie: [],
+  aboutMovie: {},
 };
 
 export default function (state = initialState, { type, payload }) {

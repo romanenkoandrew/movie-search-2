@@ -43,7 +43,6 @@ export function* getTitleByIDWorker({ payload }) {
       success: take(ActionTypes.GET_TITLE_BY_ID_SUCCESS),
     });
     if (success) {
-      yield put(showAlert({ error: false, alert: 'Test alert' }));
       yield put(toggleModal({ isOpenModal: !isOpenModal }));
     }
     if (failure) {
