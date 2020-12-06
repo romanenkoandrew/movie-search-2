@@ -11,7 +11,7 @@ export const initialState = {
   alert: null,
   isError: null,
   isLoading: false,
-  totalResults: 0,
+  totalResults: '',
   currentPage: 1,
 };
 

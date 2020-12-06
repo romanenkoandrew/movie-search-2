@@ -14,8 +14,21 @@ export const getAllTitlesRequest = (title, type = '', page = 1) =>
     ],
   });
 
+export const getTitleByIDRequest = (id) =>
+  createAPIActions({
+    endpoint: getEndpoint(`&i=${id}`),
+    method: 'GET',
+    types: [
+      ActionTypes.GET_TITLE_BY_ID_REQUEST,
+      ActionTypes.GET_TITLE_BY_ID_SUCCESS,
+      ActionTypes.GET_TITLE_BY_ID_FAILURE,
+    ],
+  });
+
 export const showAlert = createAction(ActionTypes.SHOW_ALERT);
 export const hideAlert = createAction(ActionTypes.HIDE_ALERT);
+
+export const toggleModal = createAction(ActionTypes.TOGGLE_MODAL);
 
 export const currentPageIncrement = createAction(
   ActionTypes.CURRENT_PAGE_INCREMENT
@@ -26,4 +39,5 @@ export const currentPageDecrement = createAction(
 export const currentPageReset = createAction(ActionTypes.CURRENT_PAGE_RESET);
 
 export const getAllTitles = createAction(ActionTypes.GET_ALL_TITLES);
+export const getTitleByID = createAction(ActionTypes.GET_TITLE_BY_ID);
 export const toggleSideMenu = createAction(ActionTypes.TOGGLE_SIDE_MENU);

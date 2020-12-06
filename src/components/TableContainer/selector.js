@@ -8,6 +8,7 @@ import {
   currentPageSelector,
   totalResultsSelector,
 } from 'selectors';
+import { isOpenModalSelector } from 'selectors/modalWindow';
 import { createStructuredSelector } from 'reselect';
 
 export default createStructuredSelector({
@@ -19,4 +20,5 @@ export default createStructuredSelector({
   isLoading: isLoadingSelector,
   currentPage: currentPageSelector,
   totalResults: totalResultsSelector,
+  isOpenModal: isOpenModalSelector,
 });

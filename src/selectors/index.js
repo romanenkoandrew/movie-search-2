@@ -7,6 +7,10 @@ export const sideMenuIsOpenSelector = createSelector(
   mainSelector,
   (main) => main.sideMenuIsOpen
 );
+export const isOpenModalSelector = createSelector(
+  mainSelector,
+  (main) => main.isOpenModal
+);
 export const isLoadingSelector = createSelector(
   mainSelector,
   (main) => main.isLoading

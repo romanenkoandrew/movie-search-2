@@ -6,41 +6,45 @@ import PropTypes from 'prop-types';
 import { Typography, Layout } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import styles from './Main.styles';
+import Spinner from 'components/Spinner';
 
 const { Text, Link, Title } = Typography;
 
 const { Header, Content, Footer } = Layout;
 
 const Main = (props) => {
-  const { sideMenuIsOpen, alert, isError, hideAlert } = props;
+  const { sideMenuIsOpen, alert, isError, hideAlert, isLoadingModal } = props;
   return (
-    <Layout css={styles.layoutContainer}>
-      {alert && (
-        <AlertMessage
-          description={alert}
-          type={isError}
-          closeAlert={hideAlert}
-        />
-      )}
-      <SideMenu />
-      <Layout>
-        <Header css={styles.header(sideMenuIsOpen)}>
-          <Title>Movie Search v.2.0</Title>
-        </Header>
-        <Content css={styles.content}>
-          <MainContent />
-        </Content>
-        <Footer css={styles.footer}>
-          <Link href='mailto:ramanenkaandrew@gmail.com'>
-            Created by Andrew Ramanenka
-          </Link>
-          <Link href='https://github.com/romanenkoandrew' target='_blank'>
-            <GithubOutlined />
-            GitHub
-          </Link>
-        </Footer>
+    <>
+      <Layout css={styles.layoutContainer}>
+        {alert && (
+          <AlertMessage
+            description={alert}
+            type={isError}
+            closeAlert={hideAlert}
+          />
+        )}
+        <SideMenu />
+        <Layout>
+          <Header css={styles.header(sideMenuIsOpen)}>
+            <Title>Movie Search v.2.0</Title>
+          </Header>
+          <Content css={styles.content}>
+            <MainContent />
+          </Content>
+          <Footer css={styles.footer}>
+            <Link href='mailto:ramanenkaandrew@gmail.com'>
+              Created by Andrew Ramanenka
+            </Link>
+            <Link href='https://github.com/romanenkoandrew' target='_blank'>
+              <GithubOutlined />
+              GitHub
+            </Link>
+          </Footer>
+        </Layout>
       </Layout>
-    </Layout>
+      <Spinner isLoading={isLoadingModal}></Spinner>
+    </>
   );
 };
 Main.propTypes = {
@@ -48,5 +52,6 @@ Main.propTypes = {
   alert: PropTypes.string,
   isError: PropTypes.bool,
   hideAlert: PropTypes.func.isRequired,
+  isLoadingModal: PropTypes.bool,
 };
 export default Main;

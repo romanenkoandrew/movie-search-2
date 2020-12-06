@@ -1,8 +1,14 @@
 import { takeEvery, all, put, race, take, select } from 'redux-saga/effects';
 import ActionTypes from 'actionTypes';
-import { getAllTitlesRequest, showAlert } from 'actions';
+import {
+  getAllTitlesRequest,
+  getTitleByIDRequest,
+  showAlert,
+  toggleModal,
+} from 'actions';
 import { errorMessage } from 'helpers/errorMessage';
 import { currentPageSelector } from 'selectors';
+import { isOpenModalSelector } from 'selectors/modalWindow';
 
 export function* getAllTitlesWorker({ payload }) {
   const { search, type } = payload;
@@ -27,10 +33,37 @@ export function* getAllTitlesWorker({ payload }) {
   }
 }
 
+export function* getTitleByIDWorker({ payload }) {
+  const { id } = payload;
+  try {
+    const isOpenModal = yield select(isOpenModalSelector);
+    yield put(getTitleByIDRequest(id));
+    const { failure, success } = yield race({
+      failure: take(ActionTypes.GET_TITLE_BY_ID_FAILURE),
+      success: take(ActionTypes.GET_TITLE_BY_ID_SUCCESS),
+    });
+    if (success) {
+      yield put(showAlert({ error: false, alert: 'Test alert' }));
+      yield put(toggleModal({ isOpenModal: !isOpenModal }));
+    }
+    if (failure) {
+      console.log(failure);
+      const message = errorMessage(failure);
+      yield put(showAlert({ error: true, alert: message }));
+    }
+  } catch (e) {
+    yield put(showAlert({ error: true, alert: e.message }));
+  }
+}
+
 export function* getAllTitlesWatcher() {
   yield takeEvery(ActionTypes.GET_ALL_TITLES, getAllTitlesWorker);
 }
 
+export function* getTitleByIDWatcher() {
+  yield takeEvery(ActionTypes.GET_TITLE_BY_ID, getTitleByIDWorker);
+}
+
 export default function* mainSaga() {
-  yield all([getAllTitlesWatcher()]);
+  yield all([getAllTitlesWatcher(), getTitleByIDWatcher()]);
 }

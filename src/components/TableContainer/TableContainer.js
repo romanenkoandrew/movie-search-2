@@ -1,4 +1,5 @@
 import React from 'react';
+import { NO_IMAGE_URL } from 'constants/url';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
@@ -14,10 +15,9 @@ import {
 } from '@ant-design/icons';
 import { Table, Space, Tooltip, Button, Typography, Row } from 'antd';
 import styles from './TableContainer.styles';
+import AboutMovie from 'components/AboutMovie/AboutMovie';
 
 const { Title } = Typography;
-
-const noImage = 'assets/img/noImage.jpg';
 
 const columns = [
   {
@@ -26,7 +26,8 @@ const columns = [
     key: 'Poster',
     width: 100,
     render: (dataIndex) => {
-      if (dataIndex === 'N/A') return <div css={styles.poster(noImage)}></div>;
+      if (dataIndex === 'N/A')
+        return <div css={styles.poster(NO_IMAGE_URL)}></div>;
       return <div css={styles.poster(dataIndex)}></div>;
     },
   },
@@ -75,10 +76,13 @@ const TableContainer = (props) => {
     isLoading,
     searchBlockValues,
     getAllTitles,
+    getTitleByID,
     currentPageIncrement,
     currentPageDecrement,
     currentPage,
     totalResults,
+    toggleModal,
+    isOpenModal,
   } = props;
   const { pathname } = useLocation();
   const dataForTable = () => {
@@ -136,6 +140,11 @@ const TableContainer = (props) => {
     }
   };
 
+  const getMoreAboutMovie = (record) => {
+    console.log('record', record);
+    getTitleByID({ id: record.imdbID });
+  };
+
   const diffTable = () => {
     if (pathname !== '/') {
       return (
@@ -148,8 +157,8 @@ const TableContainer = (props) => {
           loading={isLoading}
           onRow={(record) => {
             return {
-              onClick: (event) => console.log(record, event),
-              onDoubleClick: () => console.log(record),
+              // onClick: (event) => console.log(record, event),
+              onDoubleClick: () => getMoreAboutMovie(record),
             };
           }}
         />
@@ -187,8 +196,8 @@ const TableContainer = (props) => {
             pagination={false}
             onRow={(record) => {
               return {
-                onClick: (event) => console.log(record, event),
-                onDoubleClick: () => console.log(record),
+                // onClick: (event) => console.log(record, event),
+                onDoubleClick: () => getMoreAboutMovie(record),
               };
             }}
           />
@@ -202,6 +211,7 @@ const TableContainer = (props) => {
         {titleTable()}
       </Title>
       {diffTable()}
+      <AboutMovie toggleModal={toggleModal} isOpenModal={isOpenModal} />
     </>
   );
 };
@@ -215,9 +225,12 @@ TableContainer.propTypes = {
   blackList: PropTypes.array.isRequired,
   isLoading: PropTypes.bool.isRequired,
   getAllTitles: PropTypes.func.isRequired,
+  getTitleByID: PropTypes.func.isRequired,
   currentPageIncrement: PropTypes.func.isRequired,
   currentPageDecrement: PropTypes.func.isRequired,
   searchBlockValues: PropTypes.object.isRequired,
   currentPage: PropTypes.number.isRequired,
-  totalResults: PropTypes.number.isRequired,
+  totalResults: PropTypes.string.isRequired,
+  isOpenModal: PropTypes.bool.isRequired,
+  toggleModal: PropTypes.func.isRequired,
 };
