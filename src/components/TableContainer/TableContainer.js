@@ -3,6 +3,7 @@ import { NO_IMAGE_URL } from 'constants/url';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
+  EyeOutlined,
   ProfileOutlined,
   ProfileFilled,
   StarOutlined,
@@ -81,6 +82,14 @@ const TableContainer = (props) => {
       key: 'actions',
       render: (record) => (
         <Space size='small'>
+          <Tooltip title={'Show info'}>
+            <Button
+              size='small'
+              shape='circle'
+              icon={<EyeOutlined />}
+              onClick={() => getMoreAboutMovie(record)}
+            />
+          </Tooltip>
           <Tooltip
             title={
               findItemLS(WATCH_LIST, record)
