@@ -48,6 +48,8 @@ export const upgradeFavoriteList = createAction(
   ActionTypes.UPGRADE_FAVORITE_LIST
 );
 export const upgradeBlackList = createAction(ActionTypes.UPGRADE_BLACK_LIST);
-
+export const deleteFromAllLists = createAction(
+  ActionTypes.DELETE_FROM_ALL_LISTS
+);
 
 export const getFirstData = createAction(ActionTypes.GET_FIRST_DATA);

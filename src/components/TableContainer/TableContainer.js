@@ -161,8 +161,13 @@ const TableContainer = (props) => {
               onClick={() => toggleWatchListHandler(BLACK_LIST, record)}
             />
           </Tooltip>
-          <Tooltip title='Delete'>
-            <Button size='small' shape='circle' icon={<DeleteOutlined />} />
+          <Tooltip title='Delete from all lists'>
+            <Button
+              size='small'
+              shape='circle'
+              icon={<DeleteOutlined />}
+              onClick={() => deleteFromAllListsHandler(record)}
+            />
           </Tooltip>
         </Space>
       ),
@@ -227,9 +232,7 @@ const TableContainer = (props) => {
     getTitleByID({ id: record.imdbID });
   };
 
-  const toggleWatchListHandler = (arrName, record) => {
-    toggleItemInLS(arrName, record);
-    const newList = getFromLS(arrName);
+  const toggleWatchListHandlerActions = (arrName, newList) => {
     switch (arrName) {
       case WATCH_LIST: {
         upgradeWatchList(newList);
@@ -248,6 +251,23 @@ const TableContainer = (props) => {
         break;
       }
     }
+  };
+
+  const toggleWatchListHandler = (arrName, record) => {
+    toggleItemInLS(arrName, record);
+    const newList = getFromLS(arrName);
+    toggleWatchListHandlerActions(arrName, newList);
+  };
+
+  const deleteFromAllListsHandler = (record) => {
+    const lists = [WATCH_LIST, VIEWED_LIST, FAVORITE_LIST, BLACK_LIST];
+    return lists.map((el) => {
+      if (findItemLS(el, record)) {
+        toggleItemInLS(el, record);
+        const newList = getFromLS(el);
+        toggleWatchListHandlerActions(el, newList);
+      }
+    });
   };
 
   const diffTable = () => {
