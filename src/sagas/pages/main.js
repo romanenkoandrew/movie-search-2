@@ -20,8 +20,8 @@ export function* getAllTitlesWorker({ payload }) {
       failure: take(ActionTypes.GET_ALL_TITLES_FAILURE),
       success: take(ActionTypes.GET_ALL_TITLES_SUCCESS),
     });
-    if (success) {
-      yield put(showAlert({ error: false, alert: 'Test alert' }));
+    if (success.payload.Response === 'False') {
+      yield put(showAlert({ error: true, alert: success.payload.Error }));
     }
     if (failure) {
       console.log(failure);

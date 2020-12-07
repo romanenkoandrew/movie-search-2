@@ -6,7 +6,7 @@ import styles from './Alert.styles';
 const AlertMessage = ({ description, type, closeAlert }) => {
   React.useEffect(() => {
     setTimeout(closeAlert, 3000);
-  }, []);
+  }, [closeAlert]);
   return (
     <Alert
       css={styles.alert}

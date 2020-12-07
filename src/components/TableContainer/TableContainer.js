@@ -259,6 +259,7 @@ const TableContainer = (props) => {
         upgradeBlackList(newList);
         break;
       }
+      default:
     }
   };
 
@@ -276,6 +277,7 @@ const TableContainer = (props) => {
         const newList = getFromLS(el);
         toggleWatchListHandlerActions(el, newList);
       }
+      return null;
     });
   };
 

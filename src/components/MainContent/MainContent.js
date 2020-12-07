@@ -2,10 +2,8 @@ import React from 'react';
 import TableContainer from 'components/TableContainer';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import { Button, Form, Input, Typography, Row, Col, Checkbox } from 'antd';
+import { Button, Form, Input, Row, Col, Checkbox } from 'antd';
 import styles from './MainContent.styles';
-
-const { Text } = Typography;
 
 const MainContent = (props) => {
   const { getAllTitles, currentPageReset } = props;

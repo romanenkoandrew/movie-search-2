@@ -15,7 +15,7 @@ import {
   BLACK_LIST,
 } from 'constants/routing';
 
-const { Text, Link, Title } = Typography;
+const { Link, Title } = Typography;
 
 const { Header, Content, Footer } = Layout;
 
@@ -39,7 +39,7 @@ const Main = (props) => {
       favoriteList: favoriteList,
       blackList: blackList,
     });
-  }, []);
+  }, [getFirstData]);
   return (
     <>
       <Layout css={styles.layoutContainer}>
