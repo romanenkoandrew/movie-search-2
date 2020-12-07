@@ -38,7 +38,6 @@ const MainContent = (props) => {
               initialValues={{
                 movies: false,
                 series: false,
-                episodes: false,
               }}
               onFinish={onFinishSearchForm}
             >
@@ -58,11 +57,32 @@ const MainContent = (props) => {
               </Form.Item>
 
               <Row justify='space-between'>
-                <Form.Item name='movies' valuePropName='checked'>
-                  <Checkbox>Movies</Checkbox>
+                <Form.Item dependencies={['series']}>
+                  {({ getFieldValue }) => {
+                    return getFieldValue('series') ? (
+                      <Form.Item name='movies' valuePropName='checked'>
+                        <Checkbox disabled>Movies</Checkbox>
+                      </Form.Item>
+                    ) : (
+                      <Form.Item name='movies' valuePropName='checked'>
+                        <Checkbox>Movies</Checkbox>
+                      </Form.Item>
+                    );
+                  }}
                 </Form.Item>
-                <Form.Item name='series' valuePropName='checked'>
-                  <Checkbox>Series</Checkbox>
+
+                <Form.Item dependencies={['movies']}>
+                  {({ getFieldValue }) => {
+                    return getFieldValue('movies') ? (
+                      <Form.Item name='series' valuePropName='checked'>
+                        <Checkbox disabled>Series</Checkbox>
+                      </Form.Item>
+                    ) : (
+                      <Form.Item name='series' valuePropName='checked'>
+                        <Checkbox>Series</Checkbox>
+                      </Form.Item>
+                    );
+                  }}
                 </Form.Item>
                 <Form.Item>
                   <Button type='primary' htmlType='submit'>
