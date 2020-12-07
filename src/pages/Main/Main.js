@@ -7,13 +7,39 @@ import { Typography, Layout } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import styles from './Main.styles';
 import Spinner from 'components/Spinner';
+import { getFromLS } from 'helpers/localStorage';
+import {
+  WATCH_LIST,
+  VIEWED_LIST,
+  FAVORITE_LIST,
+  BLACK_LIST,
+} from 'constants/routing';
 
 const { Text, Link, Title } = Typography;
 
 const { Header, Content, Footer } = Layout;
 
 const Main = (props) => {
-  const { sideMenuIsOpen, alert, isError, hideAlert, isLoadingModal } = props;
+  const {
+    sideMenuIsOpen,
+    alert,
+    isError,
+    hideAlert,
+    isLoadingModal,
+    getFirstData,
+  } = props;
+  React.useEffect(() => {
+    const watchList = getFromLS(WATCH_LIST);
+    const viewedList = getFromLS(VIEWED_LIST);
+    const favoriteList = getFromLS(FAVORITE_LIST);
+    const blackList = getFromLS(BLACK_LIST);
+    getFirstData({
+      watchList: watchList,
+      viewedList: viewedList,
+      favoriteList: favoriteList,
+      blackList: blackList,
+    });
+  }, []);
   return (
     <>
       <Layout css={styles.layoutContainer}>
@@ -53,5 +79,6 @@ Main.propTypes = {
   isError: PropTypes.bool,
   hideAlert: PropTypes.func.isRequired,
   isLoadingModal: PropTypes.bool,
+  getFirstData: PropTypes.func.isRequired,
 };
 export default Main;

@@ -41,3 +41,13 @@ export const currentPageReset = createAction(ActionTypes.CURRENT_PAGE_RESET);
 export const getAllTitles = createAction(ActionTypes.GET_ALL_TITLES);
 export const getTitleByID = createAction(ActionTypes.GET_TITLE_BY_ID);
 export const toggleSideMenu = createAction(ActionTypes.TOGGLE_SIDE_MENU);
+
+export const upgradeWatchList = createAction(ActionTypes.UPGRADE_WATCH_LIST);
+export const upgradeViewedList = createAction(ActionTypes.UPGRADE_VIEWED_LIST);
+export const upgradeFavoriteList = createAction(
+  ActionTypes.UPGRADE_FAVORITE_LIST
+);
+export const upgradeBlackList = createAction(ActionTypes.UPGRADE_BLACK_LIST);
+
+
+export const getFirstData = createAction(ActionTypes.GET_FIRST_DATA);

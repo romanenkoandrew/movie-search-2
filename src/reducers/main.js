@@ -3,9 +3,9 @@ import get from 'lodash/get';
 
 export const initialState = {
   movieTitles: [],
-  watchList: [{ Title: 'watchList', Year: 'watchList', key: 'watchList' }],
-  viewed: [{ Title: 'viewed', Year: 'viewed', key: 'viewed' }],
-  favorite: [{ Title: 'favorite', Year: 'favorite', key: 'favorite' }],
+  watchList: [],
+  viewedList: [],
+  favoriteList: [],
   blackList: [],
   sideMenuIsOpen: false,
   alert: null,
@@ -17,6 +17,20 @@ export const initialState = {
 
 export default function (state = initialState, { type, payload }) {
   switch (type) {
+    case ActionTypes.GET_FIRST_DATA: {
+      const watchList = get(payload, 'watchList');
+      const viewedList = get(payload, 'viewedList');
+      const favoriteList = get(payload, 'favoriteList');
+      const blackList = get(payload, 'blackList');
+      return {
+        ...state,
+        watchList: watchList,
+        viewedList: viewedList,
+        favoriteList: favoriteList,
+        blackList: blackList,
+      };
+    }
+
     case ActionTypes.SHOW_ALERT: {
       console.log(payload);
       const alert = get(payload, 'alert');
@@ -57,6 +71,19 @@ export default function (state = initialState, { type, payload }) {
       const totalResults = get(payload, 'totalResults');
       movieTitles.forEach((el) => (el.key = el.imdbID));
       return { ...state, movieTitles, totalResults, isLoading: false };
+    }
+
+    case ActionTypes.UPGRADE_WATCH_LIST: {
+      return { ...state, watchList: payload };
+    }
+    case ActionTypes.UPGRADE_VIEWED_LIST: {
+      return { ...state, viewedList: payload };
+    }
+    case ActionTypes.UPGRADE_FAVORITE_LIST: {
+      return { ...state, favoriteList: payload };
+    }
+    case ActionTypes.UPGRADE_BLACK_LIST: {
+      return { ...state, blackList: payload };
     }
 
     default: {

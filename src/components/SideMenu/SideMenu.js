@@ -3,15 +3,10 @@ import PropTypes from 'prop-types';
 
 import { Menu, Layout } from 'antd';
 import {
-  HomeOutlined,
   HomeFilled,
-  ProfileOutlined,
   ProfileFilled,
-  StarOutlined,
   StarFilled,
-  PlaySquareOutlined,
   PlaySquareFilled,
-  RestOutlined,
   RestFilled,
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
@@ -60,7 +55,7 @@ const SideMenu = (props) => {
         </Menu.Item>
         <Menu.Item
           key={FAVORITE_ROUTE}
-          icon={<StarFilled style={{ color: 'yellow' }} />}
+          icon={<StarFilled style={{ color: '#ecec20' }} />}
         >
           <Link to={FAVORITE_ROUTE}>Favorite</Link>
         </Menu.Item>

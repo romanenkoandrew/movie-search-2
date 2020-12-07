@@ -38,11 +38,11 @@ export const watchListSelector = createSelector(
 );
 export const viewedSelector = createSelector(
   mainSelector,
-  (main) => main.viewed
+  (main) => main.viewedList
 );
 export const favoriteSelector = createSelector(
   mainSelector,
-  (main) => main.favorite
+  (main) => main.favoriteList
 );
 export const blackListSelector = createSelector(
   mainSelector,

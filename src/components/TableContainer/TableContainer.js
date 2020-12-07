@@ -16,55 +16,19 @@ import {
 import { Table, Space, Tooltip, Button, Typography, Row } from 'antd';
 import styles from './TableContainer.styles';
 import AboutMovie from 'components/AboutMovie/AboutMovie';
+import {
+  WATCHLIST_ROUTE,
+  VIEWED_ROUTE,
+  FAVORITE_ROUTE,
+  BLACK_LIST_ROUTE,
+  WATCH_LIST,
+  VIEWED_LIST,
+  FAVORITE_LIST,
+  BLACK_LIST,
+} from 'constants/routing';
+import { findItemLS, getFromLS, toggleItemInLS } from 'helpers/localStorage';
 
 const { Title } = Typography;
-
-const columns = [
-  {
-    title: 'Poster',
-    dataIndex: 'Poster',
-    key: 'Poster',
-    width: 100,
-    render: (dataIndex) => {
-      if (dataIndex === 'N/A')
-        return <div css={styles.poster(NO_IMAGE_URL)}></div>;
-      return <div css={styles.poster(dataIndex)}></div>;
-    },
-  },
-  {
-    title: 'Title',
-    dataIndex: 'Title',
-    key: 'Title',
-  },
-  {
-    title: 'Year',
-    dataIndex: 'Year',
-    key: 'Year',
-  },
-  {
-    title: 'Actions',
-    key: 'actions',
-    render: () => (
-      <Space size='small'>
-        <Tooltip title='Add to watch list'>
-          <Button size='small' shape='circle' icon={<ProfileOutlined />} />
-        </Tooltip>
-        <Tooltip title='Add to viewed'>
-          <Button size='small' shape='circle' icon={<PlaySquareOutlined />} />
-        </Tooltip>
-        <Tooltip title='Add to favorite'>
-          <Button size='small' shape='circle' icon={<StarOutlined />} />
-        </Tooltip>
-        <Tooltip title='Add to black list'>
-          <Button size='small' shape='circle' icon={<RestOutlined />} />
-        </Tooltip>
-        <Tooltip title='Delete'>
-          <Button size='small' shape='circle' icon={<DeleteOutlined />} />
-        </Tooltip>
-      </Space>
-    ),
-  },
-];
 
 const TableContainer = (props) => {
   const {
@@ -84,20 +48,138 @@ const TableContainer = (props) => {
     toggleModal,
     aboutMovie,
     isOpenModal,
+    upgradeWatchList,
+    upgradeViewedList,
+    upgradeFavoriteList,
+    upgradeBlackList,
   } = props;
   const { pathname } = useLocation();
+  const columns = [
+    {
+      title: 'Poster',
+      dataIndex: 'Poster',
+      key: 'Poster',
+      width: 100,
+      render: (dataIndex) => {
+        if (dataIndex === 'N/A')
+          return <div css={styles.poster(NO_IMAGE_URL)}></div>;
+        return <div css={styles.poster(dataIndex)}></div>;
+      },
+    },
+    {
+      title: 'Title',
+      dataIndex: 'Title',
+      key: 'Title',
+    },
+    {
+      title: 'Year',
+      dataIndex: 'Year',
+      key: 'Year',
+    },
+    {
+      title: 'Actions',
+      key: 'actions',
+      render: (record) => (
+        <Space size='small'>
+          <Tooltip
+            title={
+              findItemLS(WATCH_LIST, record)
+                ? 'Remove from watch list'
+                : 'Add to watch list'
+            }
+          >
+            <Button
+              size='small'
+              shape='circle'
+              icon={
+                findItemLS(WATCH_LIST, record) ? (
+                  <ProfileFilled style={{ color: '#ff9900' }} />
+                ) : (
+                  <ProfileOutlined />
+                )
+              }
+              onClick={() => toggleWatchListHandler(WATCH_LIST, record)}
+            />
+          </Tooltip>
+          <Tooltip
+            title={
+              findItemLS(VIEWED_LIST, record)
+                ? 'Remove from viewed list'
+                : 'Add to viewed list'
+            }
+          >
+            <Button
+              size='small'
+              shape='circle'
+              icon={
+                findItemLS(VIEWED_LIST, record) ? (
+                  <PlaySquareFilled style={{ color: 'red' }} />
+                ) : (
+                  <PlaySquareOutlined />
+                )
+              }
+              onClick={() => toggleWatchListHandler(VIEWED_LIST, record)}
+            />
+          </Tooltip>
+          <Tooltip
+            title={
+              findItemLS(FAVORITE_LIST, record)
+                ? 'Remove from favorite list'
+                : 'Add to favorite list'
+            }
+          >
+            <Button
+              size='small'
+              shape='circle'
+              icon={
+                findItemLS(FAVORITE_LIST, record) ? (
+                  <StarFilled style={{ color: '#ecec20' }} />
+                ) : (
+                  <StarOutlined />
+                )
+              }
+              onClick={() => toggleWatchListHandler(FAVORITE_LIST, record)}
+            />
+          </Tooltip>
+          <Tooltip
+            title={
+              findItemLS(BLACK_LIST, record)
+                ? 'Remove from black list'
+                : 'Add to black list'
+            }
+          >
+            <Button
+              size='small'
+              shape='circle'
+              icon={
+                findItemLS(BLACK_LIST, record) ? (
+                  <RestFilled />
+                ) : (
+                  <RestOutlined />
+                )
+              }
+              onClick={() => toggleWatchListHandler(BLACK_LIST, record)}
+            />
+          </Tooltip>
+          <Tooltip title='Delete'>
+            <Button size='small' shape='circle' icon={<DeleteOutlined />} />
+          </Tooltip>
+        </Space>
+      ),
+    },
+  ];
   const dataForTable = () => {
     switch (pathname) {
-      case '/watchlist': {
+      case WATCHLIST_ROUTE: {
         return watchList;
       }
-      case '/viewed': {
+      case VIEWED_ROUTE: {
         return viewed;
       }
-      case '/favorite': {
+      case FAVORITE_ROUTE: {
         return favorite;
       }
-      case '/blacklist': {
+      case BLACK_LIST_ROUTE: {
         return blackList;
       }
       default: {
@@ -107,16 +189,16 @@ const TableContainer = (props) => {
   };
   const titleTable = () => {
     switch (pathname) {
-      case '/watchlist': {
+      case WATCHLIST_ROUTE: {
         return 'Watch List';
       }
-      case '/viewed': {
-        return 'Viewed';
+      case VIEWED_ROUTE: {
+        return 'Viewed List';
       }
-      case '/favorite': {
-        return 'Favorite';
+      case FAVORITE_ROUTE: {
+        return 'Favorite List';
       }
-      case '/blacklist': {
+      case BLACK_LIST_ROUTE: {
         return 'Black List';
       }
       default: {
@@ -142,8 +224,30 @@ const TableContainer = (props) => {
   };
 
   const getMoreAboutMovie = (record) => {
-    console.log('record', record);
     getTitleByID({ id: record.imdbID });
+  };
+
+  const toggleWatchListHandler = (arrName, record) => {
+    toggleItemInLS(arrName, record);
+    const newList = getFromLS(arrName);
+    switch (arrName) {
+      case WATCH_LIST: {
+        upgradeWatchList(newList);
+        break;
+      }
+      case VIEWED_LIST: {
+        upgradeViewedList(newList);
+        break;
+      }
+      case FAVORITE_LIST: {
+        upgradeFavoriteList(newList);
+        break;
+      }
+      case BLACK_LIST: {
+        upgradeBlackList(newList);
+        break;
+      }
+    }
   };
 
   const diffTable = () => {
@@ -158,7 +262,6 @@ const TableContainer = (props) => {
           loading={isLoading}
           onRow={(record) => {
             return {
-              // onClick: (event) => console.log(record, event),
               onDoubleClick: () => getMoreAboutMovie(record),
             };
           }}
@@ -197,7 +300,6 @@ const TableContainer = (props) => {
             pagination={false}
             onRow={(record) => {
               return {
-                // onClick: (event) => console.log(record, event),
                 onDoubleClick: () => getMoreAboutMovie(record),
               };
             }}
@@ -239,4 +341,8 @@ TableContainer.propTypes = {
   isOpenModal: PropTypes.bool.isRequired,
   aboutMovie: PropTypes.object.isRequired,
   toggleModal: PropTypes.func.isRequired,
+  upgradeWatchList: PropTypes.func.isRequired,
+  upgradeViewedList: PropTypes.func.isRequired,
+  upgradeFavoriteList: PropTypes.func.isRequired,
+  upgradeBlackList: PropTypes.func.isRequired,
 };
