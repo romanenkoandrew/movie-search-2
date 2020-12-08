@@ -12,7 +12,6 @@ import {
 } from 'antd';
 import styles from './AboutMovie.styles';
 import { NO_IMAGE_URL } from 'constants/url';
-import { BREAKPOINTS } from 'constants/breakpoints';
 
 const { Text, Link } = Typography;
 const { Panel } = Collapse;

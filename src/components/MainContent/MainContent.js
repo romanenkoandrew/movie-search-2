@@ -33,7 +33,6 @@ const MainContent = (props) => {
 
   return (
     <>
-      {' '}
       {pathname === '/' && (
         <Row justify='center'>
           <Col span={15} xs={24} sm={15}>

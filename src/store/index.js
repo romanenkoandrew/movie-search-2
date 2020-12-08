@@ -1,11 +1,9 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import { createMiddleware } from 'redux-api-middleware';
 
-// middlewares
 import createSagaMiddleware from 'redux-saga';
 import { routerMiddleware } from 'connected-react-router';
 
-// helpers
 import rootReducer from 'reducers';
 import rootSaga from 'sagas';
 import history from './history';
