@@ -6,7 +6,7 @@ import { Button, Form, Input, Row, Col, Checkbox } from 'antd';
 import styles from './MainContent.styles';
 
 const MainContent = (props) => {
-  const { getAllTitles, currentPageReset } = props;
+  const { getAllTitles, currentPageReset, showAlert } = props;
   const { pathname } = useLocation();
   const [searchBlockValues, setSearchBlockValues] = React.useState({
     search: '',
@@ -15,12 +15,20 @@ const MainContent = (props) => {
   const onFinishSearchForm = (values) => {
     let type;
     const { search, movies, series } = values;
-    if (movies) type = 'movie';
-    else if (series) type = 'series';
-    else type = '';
-    currentPageReset();
-    setSearchBlockValues({ search: search, type: type });
-    getAllTitles({ search, type });
+    const isRusWords = /[а-я]/i;
+    if (isRusWords.test(search)) {
+      showAlert({
+        error: true,
+        alert: 'Invalid request. Please, input text in english',
+      });
+    } else {
+      if (movies) type = 'movie';
+      else if (series) type = 'series';
+      else type = '';
+      currentPageReset();
+      setSearchBlockValues({ search: search, type: type });
+      getAllTitles({ search, type });
+    }
   };
 
   return (
@@ -100,6 +108,7 @@ const MainContent = (props) => {
 MainContent.propTypes = {
   getAllTitles: PropTypes.func.isRequired,
   currentPageReset: PropTypes.func.isRequired,
+  showAlert: PropTypes.func.isRequired,
 };
 
 export default MainContent;
