@@ -12,6 +12,7 @@ import {
 } from 'antd';
 import styles from './AboutMovie.styles';
 import { NO_IMAGE_URL } from 'constants/url';
+import { BREAKPOINTS } from 'constants/breakpoints';
 
 const { Text, Link } = Typography;
 const { Panel } = Collapse;
@@ -61,10 +62,10 @@ const AboutMovie = ({ isOpenModal, toggleModal, aboutMovie }) => {
         el[1] && (
           <React.Fragment key={el[0]}>
             <Row gutter={[24, 8]}>
-              <Col span={4}>
+              <Col sm={4} xs={24}>
                 <Text strong>{el[0]}:</Text>
               </Col>
-              <Col span={20}>
+              <Col sm={20} xs={24}>
                 <Text>{el[1]}</Text>
               </Col>
             </Row>
@@ -81,7 +82,7 @@ const AboutMovie = ({ isOpenModal, toggleModal, aboutMovie }) => {
   const moreRatings = (arr) => {
     return arr.map((el) => {
       return (
-        <Col span={8} key={el.Source}>
+        <Col sm={8} xs={24} key={el.Source}>
           <Text strong>
             {el.Source}: {el.Value}
           </Text>
@@ -89,19 +90,27 @@ const AboutMovie = ({ isOpenModal, toggleModal, aboutMovie }) => {
       );
     });
   };
+  const modalWidth = () => {
+    const clientWidthMd = 768;
+    if (clientWidthMd < document.documentElement.clientWidth) {
+      return 1000;
+    } else return 'auto';
+  };
 
   return (
     <Modal
       title='About movie'
-      width={1000}
+      width={modalWidth()}
       centered
       footer={null}
       visible={isOpenModal}
       onCancel={closeModal}
     >
-      <Row gutter={[16, 8]}>
-        <Col span={8}>{poster(Poster)}</Col>
-        <Col span={16}>
+      <Row gutter={[16, 8]} css={styles.textCenter}>
+        <Col md={8} sm={24} css={styles.width100}>
+          {poster(Poster)}
+        </Col>
+        <Col md={16} sm={24}>
           {Title && (
             <Link
               href={`https://www.imdb.com/title/${imdbID}`}
@@ -115,36 +124,39 @@ const AboutMovie = ({ isOpenModal, toggleModal, aboutMovie }) => {
           {infoAboutMovie(infoAboutMovieArray)}
           {Plot && (
             <Row gutter={[16, 8]} align='middle'>
-              <Col span={4}>
+              <Col sm={4} xs={24}>
                 <Text strong>Description:</Text>
               </Col>
-              <Col span={20}>
+              <Col sm={20} xs={24}>
                 <Text>{Plot}</Text>
               </Col>
             </Row>
           )}
           <Row align='middle' gutter={[16, 8]}>
-            <Col span={4}>
+            <Col sm={4} xs={24}>
               <Text strong>Rating IMDb:</Text>
             </Col>
-            <Col span={20}>
-              <Space size='middle'>
+            <Col sm={20} xs={24}>
+              <Space css={styles.directionColumn}>
                 <Rate
+                  css={styles.rating}
                   count={10}
                   disabled
                   allowHalf
                   value={imdbRating !== 'N/A' ? imdbRating : 0}
                 />
-                <Text
-                  css={styles.sizeH1}
-                  strong
-                  type={imdbRating > 5 ? 'success' : 'danger'}
-                >
-                  {imdbRating !== 'N/A' ? imdbRating : 'No rating'}
-                </Text>
-                <Text type='secondary'>
-                  {imdbVotes !== 'N/A' ? imdbVotes : 'No'} votes
-                </Text>
+                <Space>
+                  <Text
+                    css={styles.sizeH1}
+                    strong
+                    type={imdbRating > 5 ? 'success' : 'danger'}
+                  >
+                    {imdbRating !== 'N/A' ? imdbRating : 'No rating'}
+                  </Text>
+                  <Text type='secondary'>
+                    {imdbVotes !== 'N/A' ? imdbVotes : 'No'} votes
+                  </Text>
+                </Space>
               </Space>
             </Col>
           </Row>

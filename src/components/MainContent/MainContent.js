@@ -36,7 +36,7 @@ const MainContent = (props) => {
       {' '}
       {pathname === '/' && (
         <Row justify='center'>
-          <Col span={15}>
+          <Col span={15} xs={24} sm={15}>
             <Form
               css={styles.form}
               layout='horizontal'

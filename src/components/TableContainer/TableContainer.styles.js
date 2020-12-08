@@ -17,7 +17,7 @@ export default {
     text-align: center;
   `,
   button: () => css`
-    width: 7rem;
+    width: 6rem;
     margin-right: 0.5rem;
     margin-top: 0.5rem;
   `,
