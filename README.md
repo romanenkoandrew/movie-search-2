@@ -8,6 +8,9 @@
 - Redux
 - Redux Saga
 - Ant Design
+- Jest
+- Enzyme
+- Docker
 
 ## About application
 
