@@ -1,7 +1,7 @@
 import React from 'react';
 import { Result, Button } from 'antd';
 import { Link } from 'react-router-dom';
-import { MAIN_ROUTE } from 'constants/routing';
+import { MAIN_ROUTE } from 'constants/routing.js';
 
 const PageNotFound = () => {
   return (

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageNotFound component should render PageNotFound component 1`] = `
+<Result
+  extra={
+    <ForwardRef(InternalButton)
+      block={false}
+      ghost={false}
+      htmlType="button"
+      loading={false}
+      type="primary"
+    >
+      <ForwardRef
+        to="/"
+      >
+        Back Home
+      </ForwardRef>
+    </ForwardRef(InternalButton)>
+  }
+  status="404"
+  subTitle="Sorry, the page you visited does not exist."
+  title="404"
+/>
+`;

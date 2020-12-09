@@ -78,7 +78,11 @@ Main.propTypes = {
   alert: PropTypes.string,
   isError: PropTypes.bool,
   hideAlert: PropTypes.func.isRequired,
-  isLoadingModal: PropTypes.bool,
+  isLoadingModal: PropTypes.bool.isRequired,
   getFirstData: PropTypes.func.isRequired,
+};
+Main.defaultProps = {
+  alert: null,
+  isError: null,
 };
 export default Main;

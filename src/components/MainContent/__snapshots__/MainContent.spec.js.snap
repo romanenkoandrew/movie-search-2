@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainContent component should render MainContent component 1`] = `
+<Fragment>
+  <Connect(TableContainer)
+    searchBlockValues={
+      Object {
+        "search": "",
+        "type": "",
+      }
+    }
+  />
+</Fragment>
+`;

@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideMenu component should render SideMenu component 1`] = `
+<EmotionCssPropInternal
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="SideMenu"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+  collapsed={true}
+  collapsible={true}
+  css={[Function]}
+  onCollapse={[Function]}
+  theme="dark"
+>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="SideMenu"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+    css={[Function]}
+    mode="inline"
+    theme="dark"
+  >
+    <MenuItem
+      icon={
+        <ForwardRef(HomeFilled)
+          style={
+            Object {
+              "color": "green",
+            }
+          }
+        />
+      }
+      key="/"
+    >
+      <Link
+        to="/"
+      >
+        Main
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(ProfileFilled)
+          style={
+            Object {
+              "color": "#ff9900",
+            }
+          }
+        />
+      }
+      key="/watchlist"
+    >
+      <Link
+        to="/watchlist"
+      >
+        Watch List
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(PlaySquareFilled)
+          style={
+            Object {
+              "color": "red",
+            }
+          }
+        />
+      }
+      key="/viewedlist"
+    >
+      <Link
+        to="/viewedlist"
+      >
+        Viewed
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(StarFilled)
+          style={
+            Object {
+              "color": "#ecec20",
+            }
+          }
+        />
+      }
+      key="/favoritelist"
+    >
+      <Link
+        to="/favoritelist"
+      >
+        Favorite
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(RestFilled)
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        />
+      }
+      key="/blacklist"
+    >
+      <Link
+        to="/blacklist"
+      >
+        Black List
+      </Link>
+    </MenuItem>
+  </EmotionCssPropInternal>
+</EmotionCssPropInternal>
+`;
+
+exports[`SideMenu component should render SideMenu component 2`] = `
+<EmotionCssPropInternal
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="SideMenu"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+  collapsed={false}
+  collapsible={true}
+  css={[Function]}
+  onCollapse={[Function]}
+  theme="dark"
+>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="SideMenu"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+    css={[Function]}
+    mode="inline"
+    theme="dark"
+  >
+    <MenuItem
+      icon={
+        <ForwardRef(HomeFilled)
+          style={
+            Object {
+              "color": "green",
+            }
+          }
+        />
+      }
+      key="/"
+    >
+      <Link
+        to="/"
+      >
+        Main
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(ProfileFilled)
+          style={
+            Object {
+              "color": "#ff9900",
+            }
+          }
+        />
+      }
+      key="/watchlist"
+    >
+      <Link
+        to="/watchlist"
+      >
+        Watch List
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(PlaySquareFilled)
+          style={
+            Object {
+              "color": "red",
+            }
+          }
+        />
+      }
+      key="/viewedlist"
+    >
+      <Link
+        to="/viewedlist"
+      >
+        Viewed
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(StarFilled)
+          style={
+            Object {
+              "color": "#ecec20",
+            }
+          }
+        />
+      }
+      key="/favoritelist"
+    >
+      <Link
+        to="/favoritelist"
+      >
+        Favorite
+      </Link>
+    </MenuItem>
+    <MenuItem
+      icon={
+        <ForwardRef(RestFilled)
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        />
+      }
+      key="/blacklist"
+    >
+      <Link
+        to="/blacklist"
+      >
+        Black List
+      </Link>
+    </MenuItem>
+  </EmotionCssPropInternal>
+</EmotionCssPropInternal>
+`;

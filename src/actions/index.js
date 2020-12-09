@@ -29,6 +29,7 @@ export const showAlert = createAction(ActionTypes.SHOW_ALERT);
 export const hideAlert = createAction(ActionTypes.HIDE_ALERT);
 
 export const toggleModal = createAction(ActionTypes.TOGGLE_MODAL);
+export const toggleSideMenu = createAction(ActionTypes.TOGGLE_SIDE_MENU);
 
 export const currentPageIncrement = createAction(
   ActionTypes.CURRENT_PAGE_INCREMENT
@@ -40,7 +41,6 @@ export const currentPageReset = createAction(ActionTypes.CURRENT_PAGE_RESET);
 
 export const getAllTitles = createAction(ActionTypes.GET_ALL_TITLES);
 export const getTitleByID = createAction(ActionTypes.GET_TITLE_BY_ID);
-export const toggleSideMenu = createAction(ActionTypes.TOGGLE_SIDE_MENU);
 
 export const upgradeWatchList = createAction(ActionTypes.UPGRADE_WATCH_LIST);
 export const upgradeViewedList = createAction(ActionTypes.UPGRADE_VIEWED_LIST);

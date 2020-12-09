@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should render Main component 1`] = `
+<Fragment>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+    css={[Function]}
+  >
+    <Connect(SideMenu) />
+    <Layout>
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={
+          Object {
+            "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk1haW4uc3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFzQiIsImZpbGUiOiJNYWluLnN0eWxlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNzcyB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xyXG5pbXBvcnQgeyBDT0xPUlMgfSBmcm9tICdjb25zdGFudHMvY29sb3JzJztcclxuaW1wb3J0IHsgQlJFQUtQT0lOVFMgfSBmcm9tICdjb25zdGFudHMvYnJlYWtwb2ludHMnO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQge1xyXG4gIGxheW91dENvbnRhaW5lcjogKCkgPT4gY3NzYFxyXG4gICAgbWluLWhlaWdodDogMTAwdmg7XHJcbiAgYCxcclxuICBoZWFkZXI6ICh2YWwpID0+IGNzc2BcclxuICAgIGgxIHtcclxuICAgICAgY29sb3I6ICR7Q09MT1JTLlNFQ09OREFSWV9URVhUX0NPTE9SfTtcclxuICAgICAgbWFyZ2luLWJvdHRvbTogMDtcclxuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMuc219KSB7XHJcbiAgICAgICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICAgIH1cclxuICAgICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMueHN9KSB7XHJcbiAgICAgICAgZGlzcGxheTogJHt2YWwgPyAnZmxleCcgOiAnbm9uZSd9O1xyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgICBAbWVkaWEgKG1heC13aWR0aDogJHtCUkVBS1BPSU5UUy5tZH0pIHtcclxuICAgICAgcGFkZGluZzogMDtcclxuICAgIH1cclxuICBgLFxyXG4gIGNvbnRlbnQ6ICgpID0+IGNzc2BcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7Q09MT1JTLk1BSU5fQkFDS0dST1VORH07XHJcbiAgICBwYWRkaW5nOiAwLjVyZW07XHJcbiAgYCxcclxuICBmb290ZXI6ICgpID0+IGNzc2BcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7Q09MT1JTLlNFQ09OREFSWV9CQUNLR1JPVU5EfTtcclxuICAgIGhlaWdodDogM3JlbTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgc3ZnIHtcclxuICAgICAgbWFyZ2luLXJpZ2h0OiAwLjVyZW07XHJcbiAgICB9XHJcbiAgICBhIHtcclxuICAgICAgY29sb3I6ICR7Q09MT1JTLlNFQ09OREFSWV9URVhUX0NPTE9SfTtcclxuICAgICAgJjpob3ZlciB7XHJcbiAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgIH1cclxuICAgIH1cclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgYSB7XHJcbiAgICAgICAgJjpmaXJzdC1vZi10eXBlIHtcclxuICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICAgICAgfVxyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgYCxcclxufTtcclxuIl19 */",
+            "name": "4lg19r",
+            "next": undefined,
+            "styles": "h1{color:rgba(255, 255, 255, 0.65);margin-bottom:0;align-items:center;height:100%;display:flex;justify-content:center;@media (max-width:576px){font-size:1.5rem;}@media (max-width:480px){display:none;}}@media (max-width:768px){padding:0;}",
+            "toString": [Function],
+          }
+        }
+      >
+        <Title>
+          Movie Search v.2.0
+        </Title>
+      </EmotionCssPropInternal>
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      >
+        <Connect(MainContent) />
+      </EmotionCssPropInternal>
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      >
+        <ForwardRef(Link)
+          href="mailto:ramanenkaandrew@gmail.com"
+        >
+          Created by Andrew Ramanenka
+        </ForwardRef(Link)>
+        <ForwardRef(Link)
+          href="https://github.com/romanenkoandrew"
+          target="_blank"
+        >
+          <ForwardRef(GithubOutlined) />
+          GitHub
+        </ForwardRef(Link)>
+      </EmotionCssPropInternal>
+    </Layout>
+  </EmotionCssPropInternal>
+  <Spinner
+    isLoading={false}
+  />
+</Fragment>
+`;
+
+exports[`Main component with alert should render Main component 1`] = `
+<Fragment>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+    css={[Function]}
+  >
+    <AlertMessage
+      closeAlert={[Function]}
+      description="Test"
+      type={true}
+    />
+    <Connect(SideMenu) />
+    <Layout>
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={
+          Object {
+            "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk1haW4uc3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFzQiIsImZpbGUiOiJNYWluLnN0eWxlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNzcyB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xyXG5pbXBvcnQgeyBDT0xPUlMgfSBmcm9tICdjb25zdGFudHMvY29sb3JzJztcclxuaW1wb3J0IHsgQlJFQUtQT0lOVFMgfSBmcm9tICdjb25zdGFudHMvYnJlYWtwb2ludHMnO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQge1xyXG4gIGxheW91dENvbnRhaW5lcjogKCkgPT4gY3NzYFxyXG4gICAgbWluLWhlaWdodDogMTAwdmg7XHJcbiAgYCxcclxuICBoZWFkZXI6ICh2YWwpID0+IGNzc2BcclxuICAgIGgxIHtcclxuICAgICAgY29sb3I6ICR7Q09MT1JTLlNFQ09OREFSWV9URVhUX0NPTE9SfTtcclxuICAgICAgbWFyZ2luLWJvdHRvbTogMDtcclxuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMuc219KSB7XHJcbiAgICAgICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICAgIH1cclxuICAgICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMueHN9KSB7XHJcbiAgICAgICAgZGlzcGxheTogJHt2YWwgPyAnZmxleCcgOiAnbm9uZSd9O1xyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgICBAbWVkaWEgKG1heC13aWR0aDogJHtCUkVBS1BPSU5UUy5tZH0pIHtcclxuICAgICAgcGFkZGluZzogMDtcclxuICAgIH1cclxuICBgLFxyXG4gIGNvbnRlbnQ6ICgpID0+IGNzc2BcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7Q09MT1JTLk1BSU5fQkFDS0dST1VORH07XHJcbiAgICBwYWRkaW5nOiAwLjVyZW07XHJcbiAgYCxcclxuICBmb290ZXI6ICgpID0+IGNzc2BcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7Q09MT1JTLlNFQ09OREFSWV9CQUNLR1JPVU5EfTtcclxuICAgIGhlaWdodDogM3JlbTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgc3ZnIHtcclxuICAgICAgbWFyZ2luLXJpZ2h0OiAwLjVyZW07XHJcbiAgICB9XHJcbiAgICBhIHtcclxuICAgICAgY29sb3I6ICR7Q09MT1JTLlNFQ09OREFSWV9URVhUX0NPTE9SfTtcclxuICAgICAgJjpob3ZlciB7XHJcbiAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgIH1cclxuICAgIH1cclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgYSB7XHJcbiAgICAgICAgJjpmaXJzdC1vZi10eXBlIHtcclxuICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICAgICAgfVxyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgYCxcclxufTtcclxuIl19 */",
+            "name": "4lg19r",
+            "next": undefined,
+            "styles": "h1{color:rgba(255, 255, 255, 0.65);margin-bottom:0;align-items:center;height:100%;display:flex;justify-content:center;@media (max-width:576px){font-size:1.5rem;}@media (max-width:480px){display:none;}}@media (max-width:768px){padding:0;}",
+            "toString": [Function],
+          }
+        }
+      >
+        <Title>
+          Movie Search v.2.0
+        </Title>
+      </EmotionCssPropInternal>
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      >
+        <Connect(MainContent) />
+      </EmotionCssPropInternal>
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Main"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      >
+        <ForwardRef(Link)
+          href="mailto:ramanenkaandrew@gmail.com"
+        >
+          Created by Andrew Ramanenka
+        </ForwardRef(Link)>
+        <ForwardRef(Link)
+          href="https://github.com/romanenkoandrew"
+          target="_blank"
+        >
+          <ForwardRef(GithubOutlined) />
+          GitHub
+        </ForwardRef(Link)>
+      </EmotionCssPropInternal>
+    </Layout>
+  </EmotionCssPropInternal>
+  <Spinner
+    isLoading={false}
+  />
+</Fragment>
+`;

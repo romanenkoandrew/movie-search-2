@@ -1,0 +1,1324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutMovie component should render AboutMovie component with aboutMovie object 1`] = `
+<Modal
+  centered={true}
+  confirmLoading={false}
+  footer={null}
+  maskTransitionName="fade"
+  okType="primary"
+  onCancel={[Function]}
+  title="About movie"
+  transitionName="zoom"
+  visible={false}
+  width="auto"
+>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "Row",
+        "render": [Function],
+      }
+    }
+    css={[Function]}
+    gutter={
+      Array [
+        16,
+        8,
+      ]
+    }
+  >
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Col",
+          "render": [Function],
+        }
+      }
+      css={[Function]}
+      md={8}
+      sm={24}
+    >
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+        css={
+          Object {
+            "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFib3V0TW92aWUuc3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUl3QiIsImZpbGUiOiJBYm91dE1vdmllLnN0eWxlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNzcyB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xyXG5pbXBvcnQgeyBCUkVBS1BPSU5UUyB9IGZyb20gJ2NvbnN0YW50cy9icmVha3BvaW50cyc7XHJcblxyXG5leHBvcnQgZGVmYXVsdCB7XHJcbiAgcG9zdGVyOiAoaW1hZ2UpID0+IGNzc2BcclxuICAgIGhlaWdodDogMjdyZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJHtpbWFnZX0pO1xyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMubWR9KSB7XHJcbiAgICAgIGJhY2tncm91bmQtcG9zaXRpb24teDogY2VudGVyO1xyXG4gICAgfVxyXG4gIGAsXHJcbiAgd2lkdGgxMDA6ICgpID0+IGNzc2BcclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICB3aWR0aDogMTAwJTtcclxuICAgIH1cclxuICBgLFxyXG4gIHJhdGluZzogKCkgPT4gY3NzYFxyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMuc219KSB7XHJcbiAgICAgIC5hbnQtcmF0ZS1zdGFyOm5vdCg6bGFzdC1jaGlsZCkge1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4O1xyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgYCxcclxuICBkaXJlY3Rpb25Db2x1bW46ICgpID0+IGNzc2BcclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG4gIGAsXHJcbiAgdGV4dENlbnRlcjogKCkgPT4gY3NzYFxyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMubWR9KSB7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICBgLFxyXG4gIHNpemVIMTogKCkgPT4gY3NzYFxyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgYCxcclxuICBkaXZpZGVyOiAoKSA9PiBjc3NgXHJcbiAgICBtYXJnaW46IDA7XHJcbiAgYCxcclxufTtcclxuIl19 */",
+            "name": "h5wf0c",
+            "next": undefined,
+            "styles": "height:27rem;width:100%;background-size:contain;background-repeat:no-repeat;background-image:url(https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg);@media (max-width:768px){background-position-x:center;}",
+            "toString": [Function],
+          }
+        }
+      />
+    </EmotionCssPropInternal>
+    <Col
+      md={16}
+      sm={24}
+    >
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        css={[Function]}
+        href="https://www.imdb.com/title/tt0076759"
+        strong={true}
+        target="_blank"
+      >
+        Star Wars: Episode IV - A New Hope
+      </EmotionCssPropInternal>
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Year
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            1977
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Type
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            movie
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Country
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            USA
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Genre
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Action, Adventure, Fantasy, Sci-Fi
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Production
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Lucasfilm Ltd.
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Director
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            George Lucas
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Writers
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            George Lucas
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Actors
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Released
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            25 May 1977
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Awards
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Won 6 Oscars. Another 52 wins & 29 nominations.
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Language
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            English
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Runtime
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            121 min
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        align="middle"
+        gutter={
+          Array [
+            16,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Description:
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+          </Text>
+        </Col>
+      </Row>
+      <Row
+        align="middle"
+        gutter={
+          Array [
+            16,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Rating IMDb:
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+            css={[Function]}
+          >
+            <EmotionCssPropInternal
+              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+              __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "character": <ForwardRef(StarFilled) />,
+                  },
+                  "displayName": "Rate",
+                  "render": [Function],
+                }
+              }
+              allowHalf={true}
+              count={10}
+              css={[Function]}
+              disabled={true}
+              value="8.6"
+            />
+            <Space>
+              <EmotionCssPropInternal
+                __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+                __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+                css={[Function]}
+                strong={true}
+                type="success"
+              >
+                8.6
+              </EmotionCssPropInternal>
+              <Text
+                type="secondary"
+              >
+                1,213,873
+                 votes
+              </Text>
+            </Space>
+          </EmotionCssPropInternal>
+        </Col>
+      </Row>
+      <Row>
+        <Collapse
+          bordered={true}
+          ghost={true}
+        >
+          <CollapsePanel
+            header="More ratings"
+            key="1"
+          >
+            <Row>
+              <Col
+                key="Internet Movie Database"
+                sm={8}
+                xs={24}
+              >
+                <Text
+                  strong={true}
+                >
+                  Internet Movie Database
+                  : 
+                  8.6/10
+                </Text>
+              </Col>
+              <Col
+                key="Rotten Tomatoes"
+                sm={8}
+                xs={24}
+              >
+                <Text
+                  strong={true}
+                >
+                  Rotten Tomatoes
+                  : 
+                  92%
+                </Text>
+              </Col>
+            </Row>
+          </CollapsePanel>
+        </Collapse>
+      </Row>
+    </Col>
+  </EmotionCssPropInternal>
+</Modal>
+`;
+
+exports[`AboutMovie component should render AboutMovie component with aboutMovie object 2`] = `
+<Modal
+  centered={true}
+  confirmLoading={false}
+  footer={null}
+  maskTransitionName="fade"
+  okType="primary"
+  onCancel={[Function]}
+  title="About movie"
+  transitionName="zoom"
+  visible={false}
+  width="auto"
+>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "Row",
+        "render": [Function],
+      }
+    }
+    css={[Function]}
+    gutter={
+      Array [
+        16,
+        8,
+      ]
+    }
+  >
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Col",
+          "render": [Function],
+        }
+      }
+      css={[Function]}
+      md={8}
+      sm={24}
+    >
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+        css={
+          Object {
+            "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFib3V0TW92aWUuc3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUl3QiIsImZpbGUiOiJBYm91dE1vdmllLnN0eWxlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNzcyB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xyXG5pbXBvcnQgeyBCUkVBS1BPSU5UUyB9IGZyb20gJ2NvbnN0YW50cy9icmVha3BvaW50cyc7XHJcblxyXG5leHBvcnQgZGVmYXVsdCB7XHJcbiAgcG9zdGVyOiAoaW1hZ2UpID0+IGNzc2BcclxuICAgIGhlaWdodDogMjdyZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJHtpbWFnZX0pO1xyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMubWR9KSB7XHJcbiAgICAgIGJhY2tncm91bmQtcG9zaXRpb24teDogY2VudGVyO1xyXG4gICAgfVxyXG4gIGAsXHJcbiAgd2lkdGgxMDA6ICgpID0+IGNzc2BcclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICB3aWR0aDogMTAwJTtcclxuICAgIH1cclxuICBgLFxyXG4gIHJhdGluZzogKCkgPT4gY3NzYFxyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMuc219KSB7XHJcbiAgICAgIC5hbnQtcmF0ZS1zdGFyOm5vdCg6bGFzdC1jaGlsZCkge1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4O1xyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgYCxcclxuICBkaXJlY3Rpb25Db2x1bW46ICgpID0+IGNzc2BcclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG4gIGAsXHJcbiAgdGV4dENlbnRlcjogKCkgPT4gY3NzYFxyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMubWR9KSB7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICBgLFxyXG4gIHNpemVIMTogKCkgPT4gY3NzYFxyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgYCxcclxuICBkaXZpZGVyOiAoKSA9PiBjc3NgXHJcbiAgICBtYXJnaW46IDA7XHJcbiAgYCxcclxufTtcclxuIl19 */",
+            "name": "ivi76e",
+            "next": undefined,
+            "styles": "height:27rem;width:100%;background-size:contain;background-repeat:no-repeat;background-image:url(assets/img/noImage.jpg);@media (max-width:768px){background-position-x:center;}",
+            "toString": [Function],
+          }
+        }
+      />
+    </EmotionCssPropInternal>
+    <Col
+      md={16}
+      sm={24}
+    >
+      <EmotionCssPropInternal
+        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        css={[Function]}
+        href="https://www.imdb.com/title/tt0076759"
+        strong={true}
+        target="_blank"
+      >
+        Star Wars: Episode IV - A New Hope
+      </EmotionCssPropInternal>
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Year
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            1977
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Type
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            movie
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Country
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            USA
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Genre
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Action, Adventure, Fantasy, Sci-Fi
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Production
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Lucasfilm Ltd.
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Director
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            George Lucas
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Writers
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            George Lucas
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Actors
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Released
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            25 May 1977
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Awards
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Won 6 Oscars. Another 52 wins & 29 nominations.
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Language
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            English
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        gutter={
+          Array [
+            24,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Runtime
+            :
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            121 min
+          </Text>
+        </Col>
+      </Row>
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+        css={[Function]}
+      />
+      <Row
+        align="middle"
+        gutter={
+          Array [
+            16,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Description:
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <Text>
+            Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+          </Text>
+        </Col>
+      </Row>
+      <Row
+        align="middle"
+        gutter={
+          Array [
+            16,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Rating IMDb:
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+            css={[Function]}
+          >
+            <EmotionCssPropInternal
+              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+              __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "character": <ForwardRef(StarFilled) />,
+                  },
+                  "displayName": "Rate",
+                  "render": [Function],
+                }
+              }
+              allowHalf={true}
+              count={10}
+              css={[Function]}
+              disabled={true}
+              value={0}
+            />
+            <Space>
+              <EmotionCssPropInternal
+                __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+                __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+                css={[Function]}
+                strong={true}
+                type="danger"
+              >
+                No rating
+              </EmotionCssPropInternal>
+              <Text
+                type="secondary"
+              >
+                No
+                 votes
+              </Text>
+            </Space>
+          </EmotionCssPropInternal>
+        </Col>
+      </Row>
+      <Row>
+        <Collapse
+          bordered={true}
+          ghost={true}
+        >
+          <CollapsePanel
+            header="More ratings"
+            key="1"
+          >
+            <Row>
+              <Col
+                key="Internet Movie Database"
+                sm={8}
+                xs={24}
+              >
+                <Text
+                  strong={true}
+                >
+                  Internet Movie Database
+                  : 
+                  8.6/10
+                </Text>
+              </Col>
+              <Col
+                key="Rotten Tomatoes"
+                sm={8}
+                xs={24}
+              >
+                <Text
+                  strong={true}
+                >
+                  Rotten Tomatoes
+                  : 
+                  92%
+                </Text>
+              </Col>
+            </Row>
+          </CollapsePanel>
+        </Collapse>
+      </Row>
+    </Col>
+  </EmotionCssPropInternal>
+</Modal>
+`;
+
+exports[`AboutMovie component should render AboutMovie component without aboutMovie object 1`] = `
+<Modal
+  centered={true}
+  confirmLoading={false}
+  footer={null}
+  maskTransitionName="fade"
+  okType="primary"
+  onCancel={[Function]}
+  title="About movie"
+  transitionName="zoom"
+  visible={false}
+  width="auto"
+>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "Row",
+        "render": [Function],
+      }
+    }
+    css={[Function]}
+    gutter={
+      Array [
+        16,
+        8,
+      ]
+    }
+  >
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Col",
+          "render": [Function],
+        }
+      }
+      css={[Function]}
+      md={8}
+      sm={24}
+    >
+      <EmotionCssPropInternal
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+        css={
+          Object {
+            "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFib3V0TW92aWUuc3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUl3QiIsImZpbGUiOiJBYm91dE1vdmllLnN0eWxlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNzcyB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xyXG5pbXBvcnQgeyBCUkVBS1BPSU5UUyB9IGZyb20gJ2NvbnN0YW50cy9icmVha3BvaW50cyc7XHJcblxyXG5leHBvcnQgZGVmYXVsdCB7XHJcbiAgcG9zdGVyOiAoaW1hZ2UpID0+IGNzc2BcclxuICAgIGhlaWdodDogMjdyZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJHtpbWFnZX0pO1xyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMubWR9KSB7XHJcbiAgICAgIGJhY2tncm91bmQtcG9zaXRpb24teDogY2VudGVyO1xyXG4gICAgfVxyXG4gIGAsXHJcbiAgd2lkdGgxMDA6ICgpID0+IGNzc2BcclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICB3aWR0aDogMTAwJTtcclxuICAgIH1cclxuICBgLFxyXG4gIHJhdGluZzogKCkgPT4gY3NzYFxyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMuc219KSB7XHJcbiAgICAgIC5hbnQtcmF0ZS1zdGFyOm5vdCg6bGFzdC1jaGlsZCkge1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4O1xyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgYCxcclxuICBkaXJlY3Rpb25Db2x1bW46ICgpID0+IGNzc2BcclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAke0JSRUFLUE9JTlRTLnNtfSkge1xyXG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG4gIGAsXHJcbiAgdGV4dENlbnRlcjogKCkgPT4gY3NzYFxyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICR7QlJFQUtQT0lOVFMubWR9KSB7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICBgLFxyXG4gIHNpemVIMTogKCkgPT4gY3NzYFxyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgYCxcclxuICBkaXZpZGVyOiAoKSA9PiBjc3NgXHJcbiAgICBtYXJnaW46IDA7XHJcbiAgYCxcclxufTtcclxuIl19 */",
+            "name": "1l3fdgz",
+            "next": undefined,
+            "styles": "height:27rem;width:100%;background-size:contain;background-repeat:no-repeat;background-image:url();@media (max-width:768px){background-position-x:center;}",
+            "toString": [Function],
+          }
+        }
+      />
+    </EmotionCssPropInternal>
+    <Col
+      md={16}
+      sm={24}
+    >
+      <Row
+        align="middle"
+        gutter={
+          Array [
+            16,
+            8,
+          ]
+        }
+      >
+        <Col
+          sm={4}
+          xs={24}
+        >
+          <Text
+            strong={true}
+          >
+            Rating IMDb:
+          </Text>
+        </Col>
+        <Col
+          sm={20}
+          xs={24}
+        >
+          <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+            css={[Function]}
+          >
+            <EmotionCssPropInternal
+              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+              __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "character": <ForwardRef(StarFilled) />,
+                  },
+                  "displayName": "Rate",
+                  "render": [Function],
+                }
+              }
+              allowHalf={true}
+              count={10}
+              css={[Function]}
+              disabled={true}
+            />
+            <Space>
+              <EmotionCssPropInternal
+                __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AboutMovie"
+                __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+                css={[Function]}
+                strong={true}
+                type="danger"
+              />
+              <Text
+                type="secondary"
+              >
+                 votes
+              </Text>
+            </Space>
+          </EmotionCssPropInternal>
+        </Col>
+      </Row>
+    </Col>
+  </EmotionCssPropInternal>
+</Modal>
+`;

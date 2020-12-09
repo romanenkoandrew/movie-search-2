@@ -7,7 +7,7 @@ export const initialState = {
   viewedList: [],
   favoriteList: [],
   blackList: [],
-  sideMenuIsOpen: false,
+  sideMenuIsOpen: true,
   alert: null,
   isError: null,
   isLoading: false,
