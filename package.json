@@ -85,7 +85,9 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "docker:build": "docker build -t movie-search:2.0 .",
+    "docker:run": "docker run -it -p 3000:3000 movie-search:2.0"
   },
   "eslintConfig": {
     "extends": "react-app"
