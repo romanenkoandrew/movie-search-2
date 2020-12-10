@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner component should render Spinner component 1`] = `
+<Modal
+  centered={true}
+  closable={false}
+  confirmLoading={false}
+  footer={null}
+  maskStyle={
+    Object {
+      "backgroundColor": "rgba(0, 0, 0, 0.15)",
+    }
+  }
+  maskTransitionName="fade"
+  okType="primary"
+  transitionName="zoom"
+  visible={true}
+  width={0}
+>
+  <Spin
+    size="large"
+    spinning={true}
+    wrapperClassName=""
+  />
+</Modal>
+`;

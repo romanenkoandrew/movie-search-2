@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableContainer component should render TableContainer component 1`] = `
+<Fragment>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="TableContainer"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+    css={[Function]}
+    level={2}
+  />
+  <EmotionCssPropInternal
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+    bordered={true}
+    columns={
+      Array [
+        Object {
+          "dataIndex": "Poster",
+          "key": "Poster",
+          "render": [Function],
+          "title": "Poster",
+          "width": 100,
+        },
+        Object {
+          "dataIndex": "Title",
+          "key": "Title",
+          "title": "Title",
+        },
+        Object {
+          "dataIndex": "Year",
+          "key": "Year",
+          "title": "Year",
+        },
+        Object {
+          "key": "actions",
+          "render": [Function],
+          "title": "Actions",
+        },
+      ]
+    }
+    css={[Function]}
+    dataSource={Array []}
+    loading={false}
+    onRow={[Function]}
+    scroll={
+      Object {
+        "x": true,
+      }
+    }
+  />
+  <AboutMovie
+    aboutMovie={Object {}}
+    isOpenModal={false}
+    toggleModal={[Function]}
+  />
+</Fragment>
+`;

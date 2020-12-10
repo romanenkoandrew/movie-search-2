@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert component should render Alert component with type=false 1`] = `
+<EmotionCssPropInternal
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AlertMessage"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+  closable={true}
+  css={[Function]}
+  description="Success"
+  message="Success"
+  onClose={[Function]}
+  showIcon={true}
+  type="success"
+/>
+`;
+
+exports[`Alert component should render Alert component with type=true 1`] = `
+<EmotionCssPropInternal
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="AlertMessage"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+  closable={true}
+  css={[Function]}
+  description="Success"
+  message="Error"
+  onClose={[Function]}
+  showIcon={true}
+  type="error"
+/>
+`;

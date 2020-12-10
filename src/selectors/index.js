@@ -3,9 +3,48 @@ import get from 'lodash/get';
 
 export const mainSelector = (state) => get(state, 'main');
 
-export const openSelector = createSelector(mainSelector, (main) => main.open);
-export const titleSelector = createSelector(mainSelector, (main) => main.title);
 export const sideMenuIsOpenSelector = createSelector(
   mainSelector,
   (main) => main.sideMenuIsOpen
+);
+export const isOpenModalSelector = createSelector(
+  mainSelector,
+  (main) => main.isOpenModal
+);
+export const isLoadingSelector = createSelector(
+  mainSelector,
+  (main) => main.isLoading
+);
+export const alertSelector = createSelector(mainSelector, (main) => main.alert);
+export const isErrorSelector = createSelector(
+  mainSelector,
+  (main) => main.isError
+);
+export const currentPageSelector = createSelector(
+  mainSelector,
+  (main) => main.currentPage
+);
+export const totalResultsSelector = createSelector(
+  mainSelector,
+  (main) => main.totalResults
+);
+export const movieTitlesSelector = createSelector(
+  mainSelector,
+  (main) => main.movieTitles
+);
+export const watchListSelector = createSelector(
+  mainSelector,
+  (main) => main.watchList
+);
+export const viewedSelector = createSelector(
+  mainSelector,
+  (main) => main.viewedList
+);
+export const favoriteSelector = createSelector(
+  mainSelector,
+  (main) => main.favoriteList
+);
+export const blackListSelector = createSelector(
+  mainSelector,
+  (main) => main.blackList
 );
